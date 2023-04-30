@@ -1,0 +1,16 @@
+current directory: /home/wesley-waka/wewe/whatsapp/vendor/bundle/ruby/2.7.0/gems/debug-1.7.2/ext/debug
+/usr/share/rvm/rubies/ruby-2.7.4/bin/ruby -I /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0 -r ./siteconf20230430-32850-tti4vd.rb extconf.rb
+creating Makefile
+
+current directory: /home/wesley-waka/wewe/whatsapp/vendor/bundle/ruby/2.7.0/gems/debug-1.7.2/ext/debug
+make "DESTDIR=" clean
+
+current directory: /home/wesley-waka/wewe/whatsapp/vendor/bundle/ruby/2.7.0/gems/debug-1.7.2/ext/debug
+make "DESTDIR="
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: /home/wesley-waka/wewe/whatsapp/vendor/bundle/ruby/2.7.0/gems/debug-1.7.2/ext/debug
+make "DESTDIR=" install
+/usr/bin/install -m 0755 debug.so ./.gem.20230430-32850-1hlyuu7/debug
