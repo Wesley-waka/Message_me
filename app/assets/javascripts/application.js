@@ -28,7 +28,7 @@ submit_message = function () {
     if (e.keyCode == 13) {
       e.target.value = "";
       $('button').click();
-      // $('#messages').append('<li>' + message + '</li>');
+      $('#messages').append('<li>' + message + '</li>');
     };
   });
 };
