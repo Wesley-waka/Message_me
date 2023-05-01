@@ -9,7 +9,7 @@ gem "rails", "~> 7.0.4", ">= 7.0.4.3"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 gem 'sass-rails', '~> 5.0'
-gem 'uglifier', '>= 1.3.0', '< 5.0'
+# gem 'uglifier', '>= 1.3.0', '< 5.0'
 
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
