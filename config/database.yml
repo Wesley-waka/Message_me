@@ -84,3 +84,6 @@ production:
   database: whatsapp_production
   username: whatsapp
   password: <%= ENV["WHATSAPP_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
+# production:
+#   <<: *default
