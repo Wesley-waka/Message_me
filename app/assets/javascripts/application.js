@@ -17,27 +17,47 @@
 //= require semantic-ui
 //= require_tree .
 
-scroll_bottom = function() {
+scroll_bottom = function () {
   if ($('#messages').length > 0) {
     $('#messages').scrollTop($('#messages')[0].scrollHeight);
   }
 }
 
-submit_message = function() {
-  $('#message_body').on('keydown', function(e) {
+submit_message = function () {
+  $('#message_body').on('keydown', function (e) {
     if (e.keyCode == 13) {
-      $('button').click();
       e.target.value = "";
+      $('button').click();
+      // $('#messages').append('<li>' + message + '</li>');
     };
   });
 };
 
 
-$(document).on('turbolinks:load', function() {
+$(document).on('turbolinks:load', function () {
   $('.ui.dropdown').dropdown();
-  $('.message .close').on('click', function() {
+  $('.message .close').on('click', function () {
     $(this).closest('.message').transition('fade');
   });
   submit_message();
   scroll_bottom();
 })
+
+// ne one
+// $(document).ready(function () {
+//   $("#message-form").submit(function (event) {
+//     event.preventDefault();
+//     var form = $(this);
+//     var url = form.attr('action');
+//     var data = form.serialize();
+//     $.ajax({
+//       url: url,
+//       type: 'POST',
+//       data: data,
+//       success: function (response) {
+//         $('#message-container').html(response);
+//         $('#message-form')[0].reset();
+//       }
+//     });
+//   });
+// });

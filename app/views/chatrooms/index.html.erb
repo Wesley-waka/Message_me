@@ -11,11 +11,11 @@
         </div>
       </div>
       <div class="extra content">
-        <%= form_for(@message, html: {class: "ui reply form", role: "form"}, url: message_path, remote: true) do |f| %>
+        <%= form_for(@message, html: {class: "ui reply form", role: "form"}, url: message_path, remote: true, id: "message-form") do |f| %>
          <div class="field">
             <div class="ui fluid icon input">
               <%= f.text_field :body %>
-              <%= f.button '<i class="bordered inverted orange edit icon"></i>'.html_safe %>
+              <%= f.button '<i class="bordered inverted orange edit icon"></i>'.html_safe, type: "submit", id: "submit-message" %>
             </div>
           </div>
         <% end %>
